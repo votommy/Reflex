@@ -1,2 +1,1 @@
-# Reflex
-My first React project
+# A First Reaction, AKA, a Reflex
