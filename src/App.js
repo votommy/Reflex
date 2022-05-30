@@ -53,7 +53,7 @@ const App = () => {
                 )
             }
 
-            <footer>Developed by: Tommy Vo | <a href="https://github.com/votommy/Reflex" target="_blank" rel="noopener noreferrer" aria-label="Reflex Github repository - opens in new tab">Source Code</a></footer>
+            <footer>Developed by: Tommy Vo | <a href="https://github.com/votommy/Reflex" target="_blank" rel="noopener noreferrer" aria-label="OMDb Github repository - opens in new tab">Source Code</a></footer>
         </div>
     );
 }
