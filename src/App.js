@@ -1,5 +1,6 @@
 import {useEffect, useState} from 'react';
 import './App.css';
+import Logo from './logo.svg';
 import SearchIcon from './search.svg';
 import MovieCard from './MovieCard';
 
@@ -17,16 +18,25 @@ const App = () => {
         setMovies(data.Search);
     }
 
+    const handleKeyDown = (e) => {
+        console.log("key down");
+        if(e.keyCode === 13) {
+            e.preventDefault();
+            document.getElementById("searchBtn").click();
+        }
+    }
+
     useEffect (() => {
         searchMovies('');
     }, []);
 
     return (
         <div className="app">
-            <h1>MovieLand</h1>
+            <img src={Logo} alt="OMDb logo" width="200px;" />
+            <h1>Open Movie Datebase</h1>
             <div className="search">
-                <input placeholder="Search for movie" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
-                <img src={SearchIcon} alt="Search" onClick={() => searchMovies(searchTerm)} />
+                <input placeholder="Search for movie" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} onKeyDown={(e) => handleKeyDown(e)} />
+                <img id="searchBtn" src={SearchIcon} alt="Search" onClick={() => searchMovies(searchTerm)} />
             </div>
 
             {
@@ -42,6 +52,8 @@ const App = () => {
                     </div>
                 )
             }
+
+            <footer>Developed by: Tommy Vo | <a href="https://github.com/votommy/Reflex" target="_blank" rel="noopener noreferrer" aria-label="Reflex Github repository - opens in new tab">Source Code</a></footer>
         </div>
     );
 }
