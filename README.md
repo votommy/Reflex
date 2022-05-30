@@ -1,7 +1,8 @@
 <img src="public/logo192.png">
 
 # Reflex
-My first React.js project. Learning the fundamentals to keep up with the industry.  
+Reflex - my first "reaction".  
+Learning the fundamentals of ***React.js*** to keep up with the industry.  
 
 ## Open Movie Database (OMBd)
 **Website**: [Open Movie Database](https://votommy.github.io/Reflex/)  
