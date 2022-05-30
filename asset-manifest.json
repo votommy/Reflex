@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Reflex/static/css/main.58e1373c.css",
-    "main.js": "/Reflex/static/js/main.a1c86b2d.js",
+    "main.js": "/Reflex/static/js/main.af9d44a4.js",
     "index.html": "/Reflex/index.html",
     "static/media/search.svg": "/Reflex/static/media/search.b416605642fcb3f2447edc96c1a80e05.svg",
     "main.58e1373c.css.map": "/Reflex/static/css/main.58e1373c.css.map",
-    "main.a1c86b2d.js.map": "/Reflex/static/js/main.a1c86b2d.js.map"
+    "main.af9d44a4.js.map": "/Reflex/static/js/main.af9d44a4.js.map"
   },
   "entrypoints": [
     "static/css/main.58e1373c.css",
-    "static/js/main.a1c86b2d.js"
+    "static/js/main.af9d44a4.js"
   ]
 }
