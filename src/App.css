@@ -26,15 +26,8 @@ body {
   flex-direction: column;
 }
 
-h1 {
-  font-size: 3rem;
-  letter-spacing: 0.9px;
-  background-color:#FFCC00;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  width: fit-content;
-  font-family: var(--font-raleway);
+#logo {
+  cursor:pointer;
 }
 
 .search {
@@ -47,7 +40,7 @@ h1 {
 
   padding: 1.5rem 1.75rem;
   border-radius: 3rem;
-  background: #1f2123;
+  background: white;
   -webkit-box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
   box-shadow: 5px 5px 7px #1c1d1f, -5px -5px 7px #222527;
 }
@@ -61,8 +54,8 @@ h1 {
   padding-right: 1rem;
 
   outline: none;
-  color: #a1a1a1;
-  background: #1f2123;
+  color: black;
+  background: white;
 }
 
 .search img {
@@ -192,6 +185,10 @@ footer {
   color: white;
   font-family: sans-serif;
   margin-top: 100px;
+  padding-top: 100px;
+  border-top: dashed #555 1px;
+  width: 100%;
+  text-align: center;
 }
 footer a {
   color: white;

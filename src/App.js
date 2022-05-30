@@ -16,10 +16,13 @@ const App = () => {
         const data = await response.json();
 
         setMovies(data.Search);
+
+        if(title.length === 0) {
+            document.querySelector("input").value = "";
+        }
     }
 
     const handleKeyDown = (e) => {
-        console.log("key down");
         if(e.keyCode === 13) {
             e.preventDefault();
             document.getElementById("searchBtn").click();
@@ -32,10 +35,9 @@ const App = () => {
 
     return (
         <div className="app">
-            <img src={Logo} alt="OMDb logo" width="200px;" />
-            <h1>Open Movie Database</h1>
+            <img id="logo" src={Logo} alt="OMDb logo" width="200px;" onClick={() => searchMovies("")} />
             <div className="search">
-                <input placeholder="Search for movie" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} onKeyDown={(e) => handleKeyDown(e)} />
+                <input placeholder="Search the Open Movie Database" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} onKeyDown={(e) => handleKeyDown(e)} />
                 <img id="searchBtn" src={SearchIcon} alt="Search" onClick={() => searchMovies(searchTerm)} />
             </div>
 
