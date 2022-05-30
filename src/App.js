@@ -33,7 +33,7 @@ const App = () => {
     return (
         <div className="app">
             <img src={Logo} alt="OMDb logo" width="200px;" />
-            <h1>Open Movie Datebase</h1>
+            <h1>Open Movie Database</h1>
             <div className="search">
                 <input placeholder="Search for movie" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} onKeyDown={(e) => handleKeyDown(e)} />
                 <img id="searchBtn" src={SearchIcon} alt="Search" onClick={() => searchMovies(searchTerm)} />
