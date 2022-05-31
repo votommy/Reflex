@@ -12,4 +12,4 @@ The OMDb API is limited to 1000 queries per day. If at any point, the search res
 ## Developer Guide
 After making any changes to the code, do `npm run deploy` to update it on GitHub pages.
 
-*Developed with the help of a React crash course*
+*Developed with the help of a React course*
